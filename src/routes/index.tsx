@@ -1,10 +1,9 @@
-import * as React from 'react'
 import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom'
 
 import { useKeycloak } from '@react-keycloak/web'
 
-import HomePage from '../pages/Home'
-import LoginPage from '../pages/Login'
+import { HomePage } from '../pages/Home'
+import { LoginPage } from '../pages/Login'
 
 import { PrivateRoute } from './utils'
 

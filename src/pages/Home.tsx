@@ -3,7 +3,7 @@ import * as React from 'react'
 import { useKeycloak } from '@react-keycloak/web'
 import { useState } from 'react'
 
-export default () => {
+export function HomePage () {
   const { keycloak } = useKeycloak()
   const [showToken, setShowToken] = useState(false)
 
