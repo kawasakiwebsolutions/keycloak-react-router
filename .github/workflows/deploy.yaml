@@ -14,8 +14,8 @@ jobs:
         run: |
           rm -rf docs && rm -rf build
           yarn install
-          sed "s|http://localhost:8080/auth|http://auth.qa.goexpression.com/auth|g" src/keycloak.ts
-          sed 's|"homepage": ".",|"homepage": "https://kawasakiwebsolutions.github.io/keycloak-react-router/",|g' package.json
+          sed -i "s|http://localhost:8080/auth|http://auth.qa.goexpression.com/auth|g" src/keycloak.ts
+          sed -i 's|"homepage": ".",|"homepage": "https://kawasakiwebsolutions.github.io/keycloak-react-router/",|g' package.json
           cat src/keycloak.ts
           cat package.json
           yarn build
